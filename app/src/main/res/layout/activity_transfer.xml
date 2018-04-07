@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        tools:context="com.hackathon18.maverick.ui.activity.TransferActivity">
+
+        <RelativeLayout
+            android:id="@+id/actionBar"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimaryDark"
+            >
+
+            <Button
+                android:id="@+id/backBt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/back_button"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                />
+
+            <Button
+                android:id="@+id/homeBt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/home_button"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                />
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/line"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_below="@id/actionBar"
+            android:layout_height="2dp"
+            android:weightSum="3"
+            android:background="#f9f8f5">
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txt_transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_transfer"
+            android:layout_below="@id/line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textSize="40dp"
+            />
+
+
+        <EditText
+            android:id="@+id/etTransfer_AmountOfCredit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@id/txt_transfer"
+            android:layout_marginTop="100dp"
+            android:inputType="numberDecimal"
+            android:hint="Add amount of credit"
+            />
+
+        <EditText
+            android:id="@+id/etTransfer_CNIC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etTransfer_AmountOfCredit"
+            android:inputType="number"
+            android:layout_margin="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="Add CNIC# of Receipt"/>
+
+        <Button
+            android:text="Send Credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btSendCredit"
+            android:textSize="25sp"
+            android:layout_below="@id/etTransfer_CNIC"
+
+            android:padding="20dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimaryDark"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        tools:context="com.hackathon18.maverick.ui.activity.WalletActivity">
+
+        <TextView
+            android:id="@+id/txtwallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_wallet"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            android:textSize="40dp"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/llcredit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtwallet"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryDark"
+            >
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="@color/colorWhite"
+                android:padding="10dp"
+                android:text="Hi Username!"/>
+            <TextView
+                android:id="@+id/tvBalanceAmount"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:text="CURRENT CREDIT : 0.00 PKR"/>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btShare"
+            android:text="@string/activity_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llcredit"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorAccent1"
+            android:layout_centerInParent="true"
+            />
+
+        <Button
+            android:id="@+id/btTransfer"
+            android:text="@string/activity_transfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/btShare"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:background="@color/colorAccent1"
+            android:layout_centerInParent="true"
+            />
+        <Button
+            android:id="@+id/btTopup"
+            android:text="@string/activity_topup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/btTransfer"
+            android:padding="10dp"
+            android:background="@color/colorAccent1"
+            android:textSize="25sp"
+            android:layout_centerInParent="true"
+            />
+        <Button
+            android:id="@+id/btDsVoucher"
+            android:text="@string/activity_discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/btTopup"
+            android:padding="10dp"
+            android:background="@color/colorAccent1"
+            android:textSize="25sp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+</layout>
