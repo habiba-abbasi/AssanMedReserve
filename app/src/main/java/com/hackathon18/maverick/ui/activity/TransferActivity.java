@@ -28,7 +28,7 @@ ActivityTransferBinding binding;
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding= DataBindingUtil.setContentView(this,R.layout.activity_transfer);
-
+        System.out.println("how are you>");
 
 
 
